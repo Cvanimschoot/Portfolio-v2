@@ -13,11 +13,11 @@ type Props = {
 
 export default function Card({ url, text, title }: Props) {
   return (
-    <div className="h-[26rem] md:h-[30rem] shadow-none hover:shadow-xl rounded-xl bg-[#f9f9f9]">
-      <div className="flex flex-col items-center justify-around h-[50%]">
+    <div className="h-[26rem] md:h-[32rem] lg:h-[36rem] xl:h-[42rem] shadow-none hover:shadow-xl rounded-xl bg-[#f9f9f9]">
+      <div className="flex flex-col items-center justify-around h-[50%] lg:h-[60%]">
         <Image src={url} height={0} width={0} sizes="100vw" alt="Screenshot of search field for Expat-ations" className="rounded-xl w-[95%] h-[95%]" />
       </div>
-      <div className="px-2 md:px-8 py-2 text-center h-[50%] flex items-center">
+      <div className="px-2 md:px-8 text-center h-[50%] lg:h-[40%]">
         <span className={raleway.className}>
           <p className="text-lg md:text-xl mb-2"><b>{title}</b></p>
           <p className="text-base md:text-lg">{text}</p>
